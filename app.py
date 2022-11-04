@@ -50,7 +50,7 @@ elif nav == "Two-Wheeler":
 
 
     pred = lr.predict(val)[0]
-    pred = round(pred)
+    pred = round(pred)/(10)
     if st.button("Predict"):
         st.success(f"Your predicted premium price is Rs. {pred}")
 
@@ -87,7 +87,7 @@ elif nav == "Four-Wheeler-Light":
 
 
     pred = lr.predict(val)[0]
-    pred = round(pred)/(-10)
+    pred = round(pred)
     if st.button("Predict"):
         st.success(f"Your predicted premium price is Rs. {pred}")
 
