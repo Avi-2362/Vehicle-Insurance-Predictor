@@ -1,2 +1,3 @@
 # Vehicle-Insurance-Predictor
-Predict the price of a second hand motorbike
+
+Predict the Insurence amount for the Vehicles by analysing its data.
