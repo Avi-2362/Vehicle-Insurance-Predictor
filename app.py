@@ -11,7 +11,6 @@ st.title("Vehicle Insurance Prediction")
 
 
 nav = st.sidebar.radio("Sections",["Home","Two-Wheeler","Four-Wheeler-Light","Four-Wheeler-Heavy"])
-st.sidebar.markdown("Made by [Mainak](https://www.linkedin.com/in/mainak-chaudhuri-127898176/)")  
 if nav == "Home":
     st.image("bike.jpg",width= 700)
     
