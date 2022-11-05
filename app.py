@@ -123,7 +123,7 @@ elif nav == "Four-Wheeler-Heavy":
 
 
     pred = lr.predict(val)[0]
-    pred = round(pred)
+    pred = round(pred)/(-1)
     if st.button("Predict"):
         st.success(f"Your predicted premium price is Rs. {pred}")
 
