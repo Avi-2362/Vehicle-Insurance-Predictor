@@ -103,11 +103,11 @@ elif nav == "Four-Wheeler-Heavy":
     lr.fit(Z, data['price'])
     st.image("truck.jpeg",width= 800)
     st.header("Commercial Four Wheeler Insurance Premium")
-    val1 = st.number_input("Enter your Bike's Horsepower",100,2000,step = 100)
-    val2 = st.number_input("Enter your Bike's Age (years)",1,40,step = 1)
-    val3 = st.number_input("Enter your Bike's Kilometers Travelled (in 1000 km)",1,50,step = 1)
-    val4 = st.number_input("Enter your Bike's Stroke",1,5,step = 1)
-    val5 = st.number_input("Enter your Bike's Brand",0,22,step = 1)
+    val1 = st.number_input("Enter your Vehicle's Horsepower",100,2000,step = 100)
+    val2 = st.number_input("Enter your Vehicle's Age (years)",1,40,step = 1)
+    val3 = st.number_input("Enter your Vehicle's Kilometers Travelled (in 1000 km)",1,50,step = 1)
+    val4 = st.number_input("Enter your Vehicle's Stroke",1,5,step = 1)
+    val5 = st.number_input("Enter your Vehicle's Brand",0,22,step = 1)
 
     val = np.array([val1,val2,val3,val4,val5]).reshape(1,-1)
     
@@ -118,7 +118,7 @@ elif nav == "Four-Wheeler-Heavy":
     dfx = dfx.drop_duplicates()
     dfx.reset_index(drop=True, inplace=True)
     st.markdown("##### Choose a brand id from the brand list given below, by pressing on the + button. For eg. BMW corresponds to Id : 0")
-    dfx.rename(columns={'data1': 'Bike Brand','data':'Brand ID'}, inplace=True)
+    dfx.rename(columns={'data1': 'Vehicle Brand','data':'Brand ID'}, inplace=True)
     st.dataframe(dfx)
 
 
